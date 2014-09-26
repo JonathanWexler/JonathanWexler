@@ -763,3 +763,15 @@ Change widths as necessary
   p, h2, h3 {orphans: 3; widows: 3}
   h2, h3{page-break-after: avoid}
 }
+
+.no-list h5 {
+  margin-bottom: .5em;
+}
+.no-list p {
+  margin-left: 1em;
+  margin-right: 1em;
+
+}
+.no-list .title {
+  color: #2d3e52;
+}
