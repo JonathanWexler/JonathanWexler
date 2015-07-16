@@ -534,7 +534,7 @@ img.left {
 
 /* Meters */
 .meter { 
-  height: 24px;  /* Can be anything */
+  height: 24px; 
   position: relative;
   border: 1px solid #f1f1f1;
   -moz-border-radius: 4px;
@@ -561,6 +561,7 @@ img.left {
   content: "";
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
+
   background-image: 
   -webkit-gradient(linear, 0 0, 100% 100%, 
     color-stop(.25, rgba(255, 255, 255, .2)), 
@@ -569,7 +570,7 @@ img.left {
     color-stop(.75, rgba(255, 255, 255, .2)), 
     color-stop(.75, transparent), to(transparent)
     );
-  background-image: 
+/*  background-image: 
   -moz-linear-gradient(
     -45deg, 
     rgba(255, 255, 255, .2) 25%, 
@@ -579,8 +580,16 @@ img.left {
     rgba(255, 255, 255, .2) 75%, 
     transparent 75%, 
     transparent
-    );
-  z-index: 1;
+    );*/
+
+/*background: linear-gradient(216deg, #499249, #086de3);*/
+background-size: 100% 100%;
+
+-webkit-animation: gradient 10s linear infinite forwards;
+/*-moz-animation: AnimationName 20s ease infinite;
+animation: AnimationName 20s ease infinite;*/
+
+  /*z-index: 1;*/
   -webkit-background-size: 50px 50px;
   -moz-background-size: 50px 50px;
   -webkit-animation: move 2s linear infinite;
@@ -597,7 +606,26 @@ img.left {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   overflow: hidden;
+  color: #fff;
 }
+@-webkit-keyframes gradient {
+/*    0%{background-position:100% 100%}
+    50%{background-position:50% 50%}
+    100%{background-position:100% 0%}*/
+
+    from {background-position: -250px 0;}
+    to {background-position: 250px 0;}
+}
+/*@-moz-keyframes AnimationName {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}*/
 
 .animate > span:after {
   display: none;
