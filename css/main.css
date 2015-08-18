@@ -803,3 +803,7 @@ Change widths as necessary
 .no-list .title {
   color: #2d3e52;
 }
+
+.spacer {
+  padding-bottom: 0px;
+}
