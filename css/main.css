@@ -808,3 +808,7 @@ Change widths as necessary
 .spacer {
   padding-bottom: 0px;
 }
+
+.box-space {
+  height: 600px;
+}
