@@ -175,7 +175,6 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 }
 #header #logo{
   text-align: center;
-
   display: none;
 }
 #header h4{
@@ -816,3 +815,6 @@ Change widths as necessary
   padding-bottom: 0px;
 }
 
+#name{
+  color: white;
+}
